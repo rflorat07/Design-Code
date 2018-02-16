@@ -294,22 +294,111 @@
                                                 <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSP-8y-F4A">
-                                                <rect key="frame" x="20" y="82" width="304" height="248"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bac-bP-h1O">
+                                                <rect key="frame" x="0.0" y="82" width="375" height="248"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="248" id="K2G-3L-sSZ"/>
-                                                    <constraint firstAttribute="width" constant="304" id="OmO-Ut-msY"/>
+                                                    <constraint firstAttribute="height" constant="248" id="q5I-T5-aCh"/>
                                                 </constraints>
-                                            </view>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="muw-5p-EmU">
+                                                    <size key="itemSize" width="304" height="248"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="6hr-uy-W89">
+                                                        <rect key="frame" x="20" y="0.0" width="304" height="248"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWt-g2-fcc">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                                    <subviews>
+                                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWh-Ip-klP">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios11" translatesAutoresizingMaskIntoConstraints="NO" id="u9Q-7e-aPa">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn iOS 11 Design" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ed3-3a-5Gf">
+                                                                                    <rect key="frame" x="20" y="20" width="264" height="39"/>
+                                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A complete guide to colors, typography and layout for iOS 11" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7H-XB-T1h">
+                                                                                    <rect key="frame" x="20" y="207" width="264" height="21"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <constraints>
+                                                                                <constraint firstItem="y7H-XB-T1h" firstAttribute="leading" secondItem="nWh-Ip-klP" secondAttribute="leading" constant="20" id="9j4-eZ-UXI"/>
+                                                                                <constraint firstItem="Ed3-3a-5Gf" firstAttribute="leading" secondItem="nWh-Ip-klP" secondAttribute="leading" constant="20" id="DD1-aM-BgL"/>
+                                                                                <constraint firstItem="Ed3-3a-5Gf" firstAttribute="top" secondItem="nWh-Ip-klP" secondAttribute="top" constant="20" id="LSV-d7-o7D"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="Ed3-3a-5Gf" secondAttribute="trailing" constant="20" id="SS4-xj-grl"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="y7H-XB-T1h" secondAttribute="trailing" constant="20" id="UMe-T3-RuW"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="u9Q-7e-aPa" secondAttribute="trailing" id="ZJe-GA-6HB"/>
+                                                                                <constraint firstItem="u9Q-7e-aPa" firstAttribute="top" secondItem="nWh-Ip-klP" secondAttribute="top" id="acl-0f-wnn"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="y7H-XB-T1h" secondAttribute="bottom" constant="20" id="pui-bq-eKF"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="u9Q-7e-aPa" secondAttribute="bottom" id="q8w-9d-a81"/>
+                                                                                <constraint firstItem="u9Q-7e-aPa" firstAttribute="leading" secondItem="nWh-Ip-klP" secondAttribute="leading" id="r31-Pd-Sd1"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="14"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="bottom" secondItem="nWh-Ip-klP" secondAttribute="bottom" id="Kwv-ht-kd5"/>
+                                                                        <constraint firstItem="nWh-Ip-klP" firstAttribute="top" secondItem="AWt-g2-fcc" secondAttribute="top" id="UGX-mp-3Af"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="nWh-Ip-klP" secondAttribute="trailing" id="sbA-O7-0Af"/>
+                                                                        <constraint firstItem="nWh-Ip-klP" firstAttribute="leading" secondItem="AWt-g2-fcc" secondAttribute="leading" id="sqa-gB-fav"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="14"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                            <real key="value" value="0.25"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                            <size key="value" width="0.0" height="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                            <integer key="value" value="20"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstItem="AWt-g2-fcc" firstAttribute="leading" secondItem="6hr-uy-W89" secondAttribute="leading" id="IDi-c5-jPl"/>
+                                                            <constraint firstAttribute="trailing" secondItem="AWt-g2-fcc" secondAttribute="trailing" id="VbN-I7-bIf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="AWt-g2-fcc" secondAttribute="bottom" id="jB8-jc-bWS"/>
+                                                            <constraint firstItem="AWt-g2-fcc" firstAttribute="top" secondItem="6hr-uy-W89" secondAttribute="top" id="uE0-tl-w5y"/>
+                                                        </constraints>
+                                                        <size key="customSize" width="304" height="248"/>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="380" id="64G-7k-arM"/>
                                             <constraint firstItem="DGf-q6-Wvj" firstAttribute="top" secondItem="kMY-uo-jTj" secondAttribute="top" constant="50" id="6RT-dp-ehL"/>
-                                            <constraint firstAttribute="bottom" secondItem="XSP-8y-F4A" secondAttribute="bottom" constant="50" id="QFA-wm-R8n"/>
+                                            <constraint firstItem="bac-bP-h1O" firstAttribute="leading" secondItem="puu-hx-5Zb" secondAttribute="leading" id="9Z7-Ya-b9u"/>
+                                            <constraint firstItem="puu-hx-5Zb" firstAttribute="trailing" secondItem="bac-bP-h1O" secondAttribute="trailing" id="Etj-kK-Qh3"/>
+                                            <constraint firstItem="puu-hx-5Zb" firstAttribute="bottom" secondItem="bac-bP-h1O" secondAttribute="bottom" constant="50" id="elb-D2-73Y"/>
                                             <constraint firstItem="DGf-q6-Wvj" firstAttribute="leading" secondItem="puu-hx-5Zb" secondAttribute="leading" constant="20" id="fBt-ca-uHl"/>
-                                            <constraint firstItem="XSP-8y-F4A" firstAttribute="leading" secondItem="puu-hx-5Zb" secondAttribute="leading" constant="20" id="xfm-XT-5L0"/>
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="puu-hx-5Zb"/>
                                     </view>
@@ -342,6 +431,7 @@
                     <connections>
                         <outlet property="backgroundImageView" destination="4MO-Rt-Nfc" id="dyf-7G-gyB"/>
                         <outlet property="bookView" destination="jcI-DP-diU" id="FRG-Ey-AjY"/>
+                        <outlet property="chapterCollectionView" destination="bac-bP-h1O" id="ie9-T0-svC"/>
                         <outlet property="deviceImageView" destination="gsw-i8-LeU" id="yno-Pf-nmd"/>
                         <outlet property="heroView" destination="ugQ-UG-w1A" id="7Da-Vw-F1t"/>
                         <outlet property="playVisualView" destination="rpF-Np-hKC" id="QuW-yN-SWh"/>
@@ -374,5 +464,6 @@
         <image name="Art-Book" width="133" height="150"/>
         <image name="Art-iPhoneX" width="129" height="326"/>
         <image name="Home" width="2880" height="1600"/>
+        <image name="ios11" width="2880" height="1600"/>
     </resources>
 </document>

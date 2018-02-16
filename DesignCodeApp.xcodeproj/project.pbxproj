@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F2798432036DC33007D29DF /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2798422036DC33007D29DF /* SectionViewController.swift */; };
 		4F4D51B120348F890089933E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D51B020348F890089933E /* AppDelegate.swift */; };
 		4F4D51B320348F890089933E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D51B220348F890089933E /* ViewController.swift */; };
 		4F4D51B620348F890089933E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D51B420348F890089933E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F2798422036DC33007D29DF /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		4F4D51AD20348F890089933E /* DesignCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4D51B020348F890089933E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F4D51B220348F890089933E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				4F4D51B020348F890089933E /* AppDelegate.swift */,
 				4F4D51B220348F890089933E /* ViewController.swift */,
+				4F2798422036DC33007D29DF /* SectionViewController.swift */,
 				4F4D51B420348F890089933E /* Main.storyboard */,
 				4F4D51BA20348F890089933E /* Assets.xcassets */,
 				4F4D51BC20348F890089933E /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				4F4D51B320348F890089933E /* ViewController.swift in Sources */,
 				4F4D51B120348F890089933E /* AppDelegate.swift in Sources */,
+				4F2798432036DC33007D29DF /* SectionViewController.swift in Sources */,
 				4F4D51B920348F890089933E /* DesignCodeApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

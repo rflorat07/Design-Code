@@ -307,7 +307,7 @@
                                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="6hr-uy-W89">
+                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="6hr-uy-W89" customClass="SectionCollectionViewCell" customModule="DesignCodeApp" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="0.0" width="304" height="248"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -387,6 +387,11 @@
                                                             <constraint firstItem="AWt-g2-fcc" firstAttribute="top" secondItem="6hr-uy-W89" secondAttribute="top" id="uE0-tl-w5y"/>
                                                         </constraints>
                                                         <size key="customSize" width="304" height="248"/>
+                                                        <connections>
+                                                            <outlet property="captionLabel" destination="y7H-XB-T1h" id="MP4-Yf-WTh"/>
+                                                            <outlet property="coverImageView" destination="u9Q-7e-aPa" id="J5M-yH-IJO"/>
+                                                            <outlet property="titleLabel" destination="Ed3-3a-5Gf" id="4I2-Ff-olY"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>

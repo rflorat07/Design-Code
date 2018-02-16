@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0D2FAD203722DE0014B52B /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D2FAC203722DE0014B52B /* TestimonialViewController.swift */; };
+		4F0D2FAF2037231A0014B52B /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D2FAE2037231A0014B52B /* TestimonialCollectionViewCell.swift */; };
 		4F2798432036DC33007D29DF /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2798422036DC33007D29DF /* SectionViewController.swift */; };
 		4F2798452036F490007D29DF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2798442036F490007D29DF /* Data.swift */; };
 		4F2798472036F564007D29DF /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2798462036F564007D29DF /* SectionCollectionViewCell.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F0D2FAC203722DE0014B52B /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
+		4F0D2FAE2037231A0014B52B /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 		4F2798422036DC33007D29DF /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		4F2798442036F490007D29DF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4F2798462036F564007D29DF /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				4F2798422036DC33007D29DF /* SectionViewController.swift */,
 				4F2798442036F490007D29DF /* Data.swift */,
 				4F2798462036F564007D29DF /* SectionCollectionViewCell.swift */,
+				4F0D2FAC203722DE0014B52B /* TestimonialViewController.swift */,
+				4F0D2FAE2037231A0014B52B /* TestimonialCollectionViewCell.swift */,
 				4F4D51B420348F890089933E /* Main.storyboard */,
 				4F4D51BA20348F890089933E /* Assets.xcassets */,
 				4F4D51BC20348F890089933E /* LaunchScreen.storyboard */,
@@ -152,7 +158,9 @@
 				4F2798452036F490007D29DF /* Data.swift in Sources */,
 				4F4D51B120348F890089933E /* AppDelegate.swift in Sources */,
 				4F2798432036DC33007D29DF /* SectionViewController.swift in Sources */,
+				4F0D2FAD203722DE0014B52B /* TestimonialViewController.swift in Sources */,
 				4F2798472036F564007D29DF /* SectionCollectionViewCell.swift in Sources */,
+				4F0D2FAF2037231A0014B52B /* TestimonialCollectionViewCell.swift in Sources */,
 				4F4D51B920348F890089933E /* DesignCodeApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

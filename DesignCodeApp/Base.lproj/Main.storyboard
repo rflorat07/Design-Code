@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qTR-ik-y8c">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,16 +10,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1951"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1917"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="88Z-Eg-183">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1951"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1917"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugQ-UG-w1A" userLabel="Hero View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
@@ -84,7 +85,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="130" height="88"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WATCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMj-lB-Uhg">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="53.5" height="18"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="18"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                             <color key="textColor" white="1" alpha="0.60110766267123283" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -96,7 +97,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of video lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYr-K2-Sc9">
-                                                                            <rect key="frame" x="0.0" y="54" width="113.5" height="18"/>
+                                                                            <rect key="frame" x="0.0" y="54" width="113.66666666666667" height="18"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -123,19 +124,19 @@
                                                                     <rect key="frame" x="170" y="0.0" width="130" height="88"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytV-WD-EoU">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="60.5" height="18"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="18"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                             <color key="textColor" white="1" alpha="0.60110766270000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iO-L0-cic">
-                                                                            <rect key="frame" x="0.0" y="18" width="104.5" height="36"/>
+                                                                            <rect key="frame" x="0.0" y="18" width="104.33333333333333" height="36"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="words and images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e9-uJ-v0Z">
-                                                                            <rect key="frame" x="0.0" y="54" width="127.5" height="18"/>
+                                                                            <rect key="frame" x="0.0" y="54" width="127.33333333333333" height="18"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -259,7 +260,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anA-Sm-vTj">
-                                                <rect key="frame" x="30" y="220" width="315" height="53"/>
+                                                <rect key="frame" x="30" y="220" width="315" height="52.666666666666686"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="315" id="MxV-JR-g2M"/>
                                                 </constraints>
@@ -270,7 +271,7 @@ design and code an iOS 11 app.</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For beginners and designers." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOD-ex-BCB">
-                                                <rect key="frame" x="30" y="273" width="315" height="26.5"/>
+                                                <rect key="frame" x="30" y="272.66666666666663" width="315" height="26.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -448,8 +449,34 @@ design and code an iOS 11 app.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="TabBar/TabBar-Home" selectedImage="TabBar/TabBar-Home-Active" id="s9q-Z9-MQd"/>
-                    <navigationItem key="navigationItem" id="mGM-xG-akM"/>
+                    <navigationItem key="navigationItem" id="Gaq-wb-b8g">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="Logo-DesignCode" id="3h7-lG-j2U"/>
+                        <view key="titleView" contentMode="scaleToFill" id="W6b-Md-cTc">
+                            <rect key="frame" x="127.66666666666669" y="8" width="120" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbt-gh-I21">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <state key="normal" title="Get the book">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="14"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" title="Login" id="g6Y-Nv-caI">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="375" height="2000"/>
                     <connections>
                         <outlet property="backgroundImageView" destination="4MO-Rt-Nfc" id="nrX-pf-JnN"/>
@@ -463,20 +490,19 @@ design and code an iOS 11 app.</string>
                         <segue destination="nsI-yr-qkg" kind="presentation" identifier="HomeToSection" id="fhk-rx-D3d"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815.20000000000005" y="132.23388305847078"/>
+            <point key="canvasLocation" x="1154.4000000000001" y="132.23388305847078"/>
         </scene>
         <!--Section View Controller-->
         <scene sceneID="sbZ-px-ZGe">
             <objects>
                 <viewController id="nsI-yr-qkg" customClass="SectionViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YLS-F7-7US">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="8Tp-uJ-rgc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fcr-Kj-NHu">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
@@ -621,30 +647,176 @@ design and code an iOS 11 app.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0S-gs-5ZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="-467.3163418290855"/>
+            <point key="canvasLocation" x="1887.2" y="-467.3163418290855"/>
         </scene>
         <!--Chapters-->
         <scene sceneID="ZoE-fq-kGY">
             <objects>
-                <viewController id="3ed-hx-QKl" sceneMemberID="viewController">
+                <viewController id="3ed-hx-QKl" customClass="ChaptersViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nht-Y3-Q0B">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Siy-Za-Mmw">
+                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gpm-6Z-auc" userLabel="Chapter View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAPTER 1: 12 SECTIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCi-r4-h02">
+                                                <rect key="frame" x="20" y="50" width="335" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ymA-Qe-0YD">
+                                                <rect key="frame" x="0.0" y="82" width="375" height="248"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="248" id="ygx-MG-pXs"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="EOw-dU-aSO">
+                                                    <size key="itemSize" width="304" height="248"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="BDr-7r-c0D" customClass="SectionCollectionViewCell" customModule="DesignCodeApp" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="0.0" width="304" height="248"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfJ-Kh-2Iw">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                                    <subviews>
+                                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Io-Zi-0Xv">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios11" translatesAutoresizingMaskIntoConstraints="NO" id="bnb-4f-XBT">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn iOS 11 Design" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdL-Dm-N7Q">
+                                                                                    <rect key="frame" x="20" y="20" width="264" height="39"/>
+                                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A complete guide to colors, typography and layout for iOS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyc-vc-Aam">
+                                                                                    <rect key="frame" x="20" y="207" width="264" height="21"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <constraints>
+                                                                                <constraint firstItem="YdL-Dm-N7Q" firstAttribute="top" secondItem="6Io-Zi-0Xv" secondAttribute="top" constant="20" id="12k-4o-ISg"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="bnb-4f-XBT" secondAttribute="bottom" id="8aA-po-noI"/>
+                                                                                <constraint firstItem="bnb-4f-XBT" firstAttribute="top" secondItem="6Io-Zi-0Xv" secondAttribute="top" id="Dhw-oB-U4r"/>
+                                                                                <constraint firstItem="vyc-vc-Aam" firstAttribute="leading" secondItem="6Io-Zi-0Xv" secondAttribute="leading" constant="20" id="LyA-CU-KaI"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="YdL-Dm-N7Q" secondAttribute="trailing" constant="20" id="QtL-Lq-m5w"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="vyc-vc-Aam" secondAttribute="bottom" constant="20" id="bh0-iB-RkG"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="bnb-4f-XBT" secondAttribute="trailing" id="d1U-We-dLh"/>
+                                                                                <constraint firstItem="bnb-4f-XBT" firstAttribute="leading" secondItem="6Io-Zi-0Xv" secondAttribute="leading" id="hpk-Le-K8b"/>
+                                                                                <constraint firstItem="YdL-Dm-N7Q" firstAttribute="leading" secondItem="6Io-Zi-0Xv" secondAttribute="leading" constant="20" id="i3l-4t-Vfy"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="vyc-vc-Aam" secondAttribute="trailing" constant="20" id="upH-dp-eJq"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="14"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="6Io-Zi-0Xv" firstAttribute="top" secondItem="tfJ-Kh-2Iw" secondAttribute="top" id="QkS-3C-RlL"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="6Io-Zi-0Xv" secondAttribute="trailing" id="hyO-7a-IPB"/>
+                                                                        <constraint firstItem="6Io-Zi-0Xv" firstAttribute="leading" secondItem="tfJ-Kh-2Iw" secondAttribute="leading" id="i5V-qD-khc"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="6Io-Zi-0Xv" secondAttribute="bottom" id="tvo-gH-ma0"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="14"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                                            <real key="value" value="0.25"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                                            <size key="value" width="0.0" height="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                                            <integer key="value" value="20"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="tfJ-Kh-2Iw" secondAttribute="trailing" id="DgL-qS-UjZ"/>
+                                                            <constraint firstItem="tfJ-Kh-2Iw" firstAttribute="top" secondItem="BDr-7r-c0D" secondAttribute="top" id="S5D-0F-3VS"/>
+                                                            <constraint firstItem="tfJ-Kh-2Iw" firstAttribute="leading" secondItem="BDr-7r-c0D" secondAttribute="leading" id="Sqb-jr-N3m"/>
+                                                            <constraint firstAttribute="bottom" secondItem="tfJ-Kh-2Iw" secondAttribute="bottom" id="thM-4U-Nly"/>
+                                                        </constraints>
+                                                        <size key="customSize" width="304" height="248"/>
+                                                        <connections>
+                                                            <outlet property="captionLabel" destination="vyc-vc-Aam" id="WyC-m7-Sww"/>
+                                                            <outlet property="coverImageView" destination="bnb-4f-XBT" id="utf-hW-gg9"/>
+                                                            <outlet property="titleLabel" destination="YdL-Dm-N7Q" id="6vx-TU-NWe"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="2sl-AN-v2m" firstAttribute="trailing" secondItem="ymA-Qe-0YD" secondAttribute="trailing" id="0we-z6-jqu"/>
+                                            <constraint firstAttribute="trailing" secondItem="uCi-r4-h02" secondAttribute="trailing" constant="20" id="B9e-Od-Vdb"/>
+                                            <constraint firstItem="uCi-r4-h02" firstAttribute="leading" secondItem="2sl-AN-v2m" secondAttribute="leading" constant="20" id="K8N-Vi-l70"/>
+                                            <constraint firstItem="2sl-AN-v2m" firstAttribute="bottom" secondItem="ymA-Qe-0YD" secondAttribute="bottom" constant="50" id="N4f-pC-fhP"/>
+                                            <constraint firstItem="uCi-r4-h02" firstAttribute="top" secondItem="Gpm-6Z-auc" secondAttribute="top" constant="50" id="QQl-Te-hgN"/>
+                                            <constraint firstAttribute="height" constant="380" id="U89-ur-5j5"/>
+                                            <constraint firstItem="ymA-Qe-0YD" firstAttribute="leading" secondItem="2sl-AN-v2m" secondAttribute="leading" id="b3z-zY-gNo"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="2sl-AN-v2m"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Gpm-6Z-auc" secondAttribute="trailing" id="9TL-Ss-bph"/>
+                                    <constraint firstItem="Gpm-6Z-auc" firstAttribute="centerX" secondItem="Siy-Za-Mmw" secondAttribute="centerX" id="CD4-Ja-frg"/>
+                                    <constraint firstItem="Gpm-6Z-auc" firstAttribute="leading" secondItem="Siy-Za-Mmw" secondAttribute="leading" id="NBA-W9-Lw0"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gpm-6Z-auc" secondAttribute="bottom" id="ic7-XK-5oT"/>
+                                    <constraint firstItem="Gpm-6Z-auc" firstAttribute="top" secondItem="Siy-Za-Mmw" secondAttribute="top" id="x8F-wB-NpE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Siy-Za-Mmw" firstAttribute="leading" secondItem="9kS-Ak-iI2" secondAttribute="leading" id="2OW-Il-xVU"/>
+                            <constraint firstItem="Siy-Za-Mmw" firstAttribute="top" secondItem="9kS-Ak-iI2" secondAttribute="top" id="SL1-vV-9Cg"/>
+                            <constraint firstItem="9kS-Ak-iI2" firstAttribute="trailing" secondItem="Siy-Za-Mmw" secondAttribute="trailing" id="tfq-2G-2d8"/>
+                            <constraint firstItem="9kS-Ak-iI2" firstAttribute="bottom" secondItem="Siy-Za-Mmw" secondAttribute="bottom" id="uvr-uk-M5c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9kS-Ak-iI2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chapters" image="TabBar/Tabbar-Chapters" selectedImage="TabBar/TabBar-Chapters-Active" id="0b1-io-Dcu"/>
+                    <navigationItem key="navigationItem" title="Chapters" id="m0c-og-FQL"/>
+                    <connections>
+                        <outlet property="chapter1CollectionView" destination="ymA-Qe-0YD" id="OI9-5I-aIe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXj-sI-Loo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2268" y="-467.3163418290855"/>
+            <point key="canvasLocation" x="2606" y="252"/>
         </scene>
         <!--Bookmarks-->
         <scene sceneID="4S3-kK-sYt">
             <objects>
                 <tableViewController id="FJe-uD-awv" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RAL-pf-l0Q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -652,7 +824,7 @@ design and code an iOS 11 app.</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ucF-g3-ygx" id="Hxd-G4-OvB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -666,14 +838,14 @@ design and code an iOS 11 app.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npI-tF-bZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2988" y="-467.3163418290855"/>
+            <point key="canvasLocation" x="3666.4000000000001" y="-467.73399014778329"/>
         </scene>
         <!--Exercises-->
         <scene sceneID="5S6-HY-odi">
             <objects>
                 <tableViewController id="EuQ-rL-ZIh" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wbB-F9-0Ci">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -681,7 +853,7 @@ design and code an iOS 11 app.</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="38S-oR-VqV" id="1VF-yV-Rsx">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -695,18 +867,18 @@ design and code an iOS 11 app.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1K-Mf-4kR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3692" y="-467.3163418290855"/>
+            <point key="canvasLocation" x="4370.3999999999996" y="-467.73399014778329"/>
         </scene>
         <!--More-->
         <scene sceneID="K1W-0x-xzf">
             <objects>
                 <viewController id="R94-RR-FIx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ksh-0w-7Nb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="751"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9Z-M9-F4b">
-                                <rect key="frame" x="0.0" y="20" width="375" height="731"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="709"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFg-6C-jmV" userLabel="Dialog View">
                                         <rect key="frame" x="20" y="20" width="335" height="680"/>
@@ -715,7 +887,7 @@ design and code an iOS 11 app.</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="680"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY PROGRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSX-Lq-Lxs">
-                                                        <rect key="frame" x="113.5" y="20" width="108" height="18"/>
+                                                        <rect key="frame" x="113.66666666666666" y="20" width="107.66666666666666" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -731,7 +903,7 @@ design and code an iOS 11 app.</string>
                                                                 </constraints>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder/image-ring-2" translatesAutoresizingMaskIntoConstraints="NO" id="XkS-OR-pOm">
-                                                                <rect key="frame" x="112.5" y="0.0" width="70" height="70"/>
+                                                                <rect key="frame" x="112.66666666666666" y="0.0" width="70" height="70"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="70" id="2oC-S7-WKg"/>
                                                                     <constraint firstAttribute="height" constant="70" id="6jh-T6-RFq"/>
@@ -750,7 +922,7 @@ design and code an iOS 11 app.</string>
                                                         <rect key="frame" x="0.0" y="136" width="335" height="360"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctS-b1-cci">
-                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="59"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="59.333333333333336"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                 <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -760,7 +932,7 @@ design and code an iOS 11 app.</string>
                                                                 </state>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HS-Rx-cuV">
-                                                                <rect key="frame" x="0.0" y="60" width="335" height="59.5"/>
+                                                                <rect key="frame" x="0.0" y="60.333333333333343" width="335" height="59"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                 <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -770,7 +942,7 @@ design and code an iOS 11 app.</string>
                                                                 </state>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UF-uc-Fa6">
-                                                                <rect key="frame" x="0.0" y="120.5" width="335" height="59"/>
+                                                                <rect key="frame" x="0.0" y="120.3333333333333" width="335" height="59.333333333333329"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                 <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -780,7 +952,7 @@ design and code an iOS 11 app.</string>
                                                                 </state>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8w-uD-LGS">
-                                                                <rect key="frame" x="0.0" y="180.5" width="335" height="59"/>
+                                                                <rect key="frame" x="0.0" y="180.66666666666669" width="335" height="59"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                 <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -790,7 +962,7 @@ design and code an iOS 11 app.</string>
                                                                 </state>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTY-54-vwe">
-                                                                <rect key="frame" x="0.0" y="240.5" width="335" height="59.5"/>
+                                                                <rect key="frame" x="0.0" y="240.66666666666671" width="335" height="59.333333333333343"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                 <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -824,7 +996,7 @@ design and code an iOS 11 app.</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7e-gT-QEC">
-                                                        <rect key="frame" x="82.5" y="599" width="170" height="22"/>
+                                                        <rect key="frame" x="82.666666666666686" y="599" width="170" height="22"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="170" id="stj-Mz-tRD"/>
                                                         </constraints>
@@ -893,7 +1065,7 @@ design and code an iOS 11 app.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFM-Oc-veo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4359" y="-467"/>
+            <point key="canvasLocation" x="5036" y="-468.4729064039409"/>
         </scene>
         <!--Testimonial View Controller-->
         <scene sceneID="nRu-zw-cPR">
@@ -930,7 +1102,7 @@ design and code an iOS 11 app.</string>
                                                             <rect key="frame" x="0.0" y="0.0" width="304" height="235"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nW-4j-2Pf">
-                                                                    <rect key="frame" x="54" y="20" width="230" height="143.5"/>
+                                                                    <rect key="frame" x="54" y="20" width="230" height="143.33333333333334"/>
                                                                     <string key="text">Design+Code is a wake-up call. Why should I learn a web based technology or a deprecated tool when the obvious choice is to learn Xcode?</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1029,7 +1201,7 @@ design and code an iOS 11 app.</string>
                                         </cells>
                                     </collectionView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ut5-pl-8Kq">
-                                        <rect key="frame" x="77.5" y="335" width="220" height="73.5"/>
+                                        <rect key="frame" x="77.666666666666686" y="335" width="220" height="73.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26,000 people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TZ-JJ-FYO">
                                                 <rect key="frame" x="0.0" y="0.0" width="203" height="36"/>
@@ -1044,7 +1216,7 @@ design and code an iOS 11 app.</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocz-Pt-Tsm">
-                                                <rect key="frame" x="0.0" y="70.5" width="220" height="3"/>
+                                                <rect key="frame" x="0.0" y="70.666666666666686" width="220" height="3"/>
                                                 <color key="backgroundColor" red="0.68627450980000004" green="0.2784313725" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="3" id="X3i-yy-oMS"/>
@@ -1100,7 +1272,7 @@ design and code an iOS 11 app.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g3-wh-PXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="131.33433283358323"/>
+            <point key="canvasLocation" x="1887.2" y="131.33433283358323"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Csy-Uu-eoc">
@@ -1113,8 +1285,8 @@ design and code an iOS 11 app.</string>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="KFi-te-8Sc"/>
-                        <segue destination="3ed-hx-QKl" kind="relationship" relationship="viewControllers" id="vbT-yV-mRf"/>
+                        <segue destination="R4N-ax-cDK" kind="relationship" relationship="viewControllers" id="KFi-te-8Sc"/>
+                        <segue destination="aHa-l6-odd" kind="relationship" relationship="viewControllers" id="vbT-yV-mRf"/>
                         <segue destination="FJe-uD-awv" kind="relationship" relationship="viewControllers" id="VqG-fs-VWM"/>
                         <segue destination="EuQ-rL-ZIh" kind="relationship" relationship="viewControllers" id="vJp-Lm-tAp"/>
                         <segue destination="R94-RR-FIx" kind="relationship" relationship="viewControllers" id="35U-g0-jRc"/>
@@ -1124,6 +1296,58 @@ design and code an iOS 11 app.</string>
             </objects>
             <point key="canvasLocation" x="2695" y="-1442"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="81h-nH-6yE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R4N-ax-cDK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="TabBar/TabBar-Home" selectedImage="TabBar/TabBar-Home-Active" id="s9q-Z9-MQd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Ehp-hz-1AA">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LNE-zr-E4N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iIZ-xJ-597" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369" y="-467"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="caH-x0-HLh">
+            <objects>
+                <viewController id="aa5-G7-Puf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v5F-2S-iMo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6GW-4k-WsL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="02c-Az-KUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Chapters-->
+        <scene sceneID="KdY-6g-iAp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aHa-l6-odd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chapters" image="TabBar/Tabbar-Chapters" selectedImage="TabBar/TabBar-Chapters-Active" id="0b1-io-Dcu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="l5c-yH-hM7">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3ed-hx-QKl" kind="relationship" relationship="rootViewController" id="fwk-6I-eMz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8y6-Ff-INg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606.4000000000001" y="-467.73399014778329"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Action-Close" width="13" height="13"/>
@@ -1132,6 +1356,7 @@ design and code an iOS 11 app.</string>
         <image name="Art-iPhoneX" width="129" height="326"/>
         <image name="Home" width="2880" height="1600"/>
         <image name="Logo-Apple" width="36" height="44"/>
+        <image name="Logo-DesignCode" width="28" height="28"/>
         <image name="Logo-Google" width="100" height="37"/>
         <image name="Logo-Stripe" width="81" height="33"/>
         <image name="More/ambience" width="36" height="36"/>

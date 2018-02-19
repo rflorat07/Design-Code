@@ -19,6 +19,8 @@
 		4F4D51BB20348F890089933E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D51BA20348F890089933E /* Assets.xcassets */; };
 		4F4D51BE20348F890089933E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D51BC20348F890089933E /* LaunchScreen.storyboard */; };
 		4F8C8EDC203B0C1B00C9F4B8 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C8EDB203B0C1B00C9F4B8 /* ChaptersViewController.swift */; };
+		4F8C8EDE203B142B00C9F4B8 /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C8EDD203B142B00C9F4B8 /* BookmarksTableViewController.swift */; };
+		4F8C8EE0203B1BFC00C9F4B8 /* BookmarksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C8EDF203B1BFC00C9F4B8 /* BookmarksTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		4F4D51BD20348F890089933E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F4D51BF20348F890089933E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8C8EDB203B0C1B00C9F4B8 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
+		4F8C8EDD203B142B00C9F4B8 /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
+		4F8C8EDF203B1BFC00C9F4B8 /* BookmarksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				4F2798462036F564007D29DF /* SectionCollectionViewCell.swift */,
 				4F0D2FAC203722DE0014B52B /* TestimonialViewController.swift */,
 				4F0D2FAE2037231A0014B52B /* TestimonialCollectionViewCell.swift */,
+				4F8C8EDD203B142B00C9F4B8 /* BookmarksTableViewController.swift */,
+				4F8C8EDF203B1BFC00C9F4B8 /* BookmarksTableViewCell.swift */,
 				4F2798442036F490007D29DF /* Data.swift */,
 				4F4D51B420348F890089933E /* Main.storyboard */,
 				4F4D51BA20348F890089933E /* Assets.xcassets */,
@@ -158,9 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F4D51B320348F890089933E /* HomeViewController.swift in Sources */,
+				4F8C8EDE203B142B00C9F4B8 /* BookmarksTableViewController.swift in Sources */,
 				4F2798452036F490007D29DF /* Data.swift in Sources */,
 				4F4D51B120348F890089933E /* AppDelegate.swift in Sources */,
 				4F2798432036DC33007D29DF /* SectionViewController.swift in Sources */,
+				4F8C8EE0203B1BFC00C9F4B8 /* BookmarksTableViewCell.swift in Sources */,
 				4F0D2FAD203722DE0014B52B /* TestimonialViewController.swift in Sources */,
 				4F2798472036F564007D29DF /* SectionCollectionViewCell.swift in Sources */,
 				4F0D2FAF2037231A0014B52B /* TestimonialCollectionViewCell.swift in Sources */,

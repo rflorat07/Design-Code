@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -647,7 +648,7 @@ design and code an iOS 11 app.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0S-gs-5ZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1887.2" y="-467.3163418290855"/>
+            <point key="canvasLocation" x="1934" y="-468"/>
         </scene>
         <!--Chapters-->
         <scene sceneID="ZoE-fq-kGY">
@@ -809,24 +810,97 @@ design and code an iOS 11 app.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXj-sI-Loo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2606" y="252"/>
+            <point key="canvasLocation" x="2606" y="255"/>
         </scene>
         <!--Bookmarks-->
         <scene sceneID="4S3-kK-sYt">
             <objects>
-                <tableViewController id="FJe-uD-awv" sceneMemberID="viewController">
+                <tableViewController id="FJe-uD-awv" customClass="BookmarksTableViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RAL-pf-l0Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ucF-g3-ygx">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookmarkCell" rowHeight="125" id="ucF-g3-ygx" customClass="BookmarksTableViewCell" customModule="DesignCodeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ucF-g3-ygx" id="Hxd-G4-OvB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="124.66666666666667"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bookmarks-Code" translatesAutoresizingMaskIntoConstraints="NO" id="Tr5-z5-fqm">
+                                            <rect key="frame" x="16" y="20" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="cNH-e3-Dhk"/>
+                                                <constraint firstAttribute="width" constant="44" id="rnz-xg-zlu"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekq-ju-TrX">
+                                            <rect key="frame" x="47" y="20" width="18" height="18"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfi-74-6L0">
+                                                    <rect key="frame" x="5.3333333333333357" y="-0.33333333333333215" width="7.6666666666666679" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="18" id="Q46-r1-rXl"/>
+                                                <constraint firstItem="Yfi-74-6L0" firstAttribute="centerX" secondItem="ekq-ju-TrX" secondAttribute="centerX" id="VCf-O8-YaC"/>
+                                                <constraint firstAttribute="height" constant="18" id="c8O-VS-8xV"/>
+                                                <constraint firstItem="Yfi-74-6L0" firstAttribute="centerY" secondItem="ekq-ju-TrX" secondAttribute="centerY" id="i8P-TP-DSL"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="9"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4oA-Te-MpJ">
+                                            <rect key="frame" x="73" y="20" width="286" height="86"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j2-bS-2k0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="286" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7O-iA-lwX">
+                                                    <rect key="frame" x="0.0" y="18" width="286" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBV-0p-pK2">
+                                                    <rect key="frame" x="0.0" y="42" width="286" height="44"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ekq-ju-TrX" firstAttribute="trailing" secondItem="Tr5-z5-fqm" secondAttribute="trailing" constant="5" id="5ei-gz-889"/>
+                                        <constraint firstItem="Tr5-z5-fqm" firstAttribute="top" secondItem="Hxd-G4-OvB" secondAttribute="topMargin" constant="9" id="8Jk-h5-vdb"/>
+                                        <constraint firstItem="ekq-ju-TrX" firstAttribute="top" secondItem="Tr5-z5-fqm" secondAttribute="top" id="CF8-G4-tTG"/>
+                                        <constraint firstItem="4oA-Te-MpJ" firstAttribute="leading" secondItem="ekq-ju-TrX" secondAttribute="trailing" constant="8" id="VwH-Sq-Zmw"/>
+                                        <constraint firstAttribute="bottom" secondItem="4oA-Te-MpJ" secondAttribute="bottom" constant="18" id="a5b-9c-T0C"/>
+                                        <constraint firstAttribute="trailing" secondItem="4oA-Te-MpJ" secondAttribute="trailing" constant="16" id="phy-dd-4EH"/>
+                                        <constraint firstItem="4oA-Te-MpJ" firstAttribute="top" secondItem="Hxd-G4-OvB" secondAttribute="top" constant="20" id="qXE-cj-rqI"/>
+                                        <constraint firstItem="Tr5-z5-fqm" firstAttribute="leading" secondItem="Hxd-G4-OvB" secondAttribute="leadingMargin" id="sL8-TV-vUm"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="70" minY="0.0" maxX="16" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="badgeImageView" destination="Tr5-z5-fqm" id="6St-ry-lJW"/>
+                                    <outlet property="bodyLabel" destination="gBV-0p-pK2" id="a72-za-7cx"/>
+                                    <outlet property="chapterNumberLabel" destination="Yfi-74-6L0" id="Zjg-Y5-N4D"/>
+                                    <outlet property="chapterTitleLabel" destination="4j2-bS-2k0" id="ueG-Ui-Nj7"/>
+                                    <outlet property="titleLabel" destination="Y7O-iA-lwX" id="eEp-h4-0z9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -834,11 +908,11 @@ design and code an iOS 11 app.</string>
                             <outlet property="delegate" destination="FJe-uD-awv" id="2dm-YU-QKU"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Bookmarks" image="TabBar/TabBar-Bookmarks" selectedImage="TabBar/TabBar-Bookmarks-Active" id="2gE-iW-3s8"/>
+                    <navigationItem key="navigationItem" title="Bookmarks" id="Rih-4X-Y0B"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npI-tF-bZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3666.4000000000001" y="-467.73399014778329"/>
+            <point key="canvasLocation" x="3324" y="254.92610837438426"/>
         </scene>
         <!--Exercises-->
         <scene sceneID="5S6-HY-odi">
@@ -867,7 +941,7 @@ design and code an iOS 11 app.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1K-Mf-4kR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4370.3999999999996" y="-467.73399014778329"/>
+            <point key="canvasLocation" x="4368.8000000000002" y="-468.4729064039409"/>
         </scene>
         <!--More-->
         <scene sceneID="K1W-0x-xzf">
@@ -1065,7 +1139,7 @@ design and code an iOS 11 app.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFM-Oc-veo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5036" y="-468.4729064039409"/>
+            <point key="canvasLocation" x="5072.8000000000002" y="-473.64532019704433"/>
         </scene>
         <!--Testimonial View Controller-->
         <scene sceneID="nRu-zw-cPR">
@@ -1272,7 +1346,7 @@ design and code an iOS 11 app.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g3-wh-PXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1887.2" y="131.33433283358323"/>
+            <point key="canvasLocation" x="1934" y="149"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Csy-Uu-eoc">
@@ -1287,14 +1361,14 @@ design and code an iOS 11 app.</string>
                     <connections>
                         <segue destination="R4N-ax-cDK" kind="relationship" relationship="viewControllers" id="KFi-te-8Sc"/>
                         <segue destination="aHa-l6-odd" kind="relationship" relationship="viewControllers" id="vbT-yV-mRf"/>
-                        <segue destination="FJe-uD-awv" kind="relationship" relationship="viewControllers" id="VqG-fs-VWM"/>
+                        <segue destination="TVE-Wp-ZfO" kind="relationship" relationship="viewControllers" id="VqG-fs-VWM"/>
                         <segue destination="EuQ-rL-ZIh" kind="relationship" relationship="viewControllers" id="vJp-Lm-tAp"/>
                         <segue destination="R94-RR-FIx" kind="relationship" relationship="viewControllers" id="35U-g0-jRc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Et-oZ-A2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2695" y="-1442"/>
+            <point key="canvasLocation" x="2606" y="-1445"/>
         </scene>
         <!--Home-->
         <scene sceneID="81h-nH-6yE">
@@ -1315,20 +1389,6 @@ design and code an iOS 11 app.</string>
             </objects>
             <point key="canvasLocation" x="369" y="-467"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="caH-x0-HLh">
-            <objects>
-                <viewController id="aa5-G7-Puf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="v5F-2S-iMo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="6GW-4k-WsL"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="02c-Az-KUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--Chapters-->
         <scene sceneID="KdY-6g-iAp">
             <objects>
@@ -1348,12 +1408,32 @@ design and code an iOS 11 app.</string>
             </objects>
             <point key="canvasLocation" x="2606.4000000000001" y="-467.73399014778329"/>
         </scene>
+        <!--Bookmarks-->
+        <scene sceneID="8fS-3a-daP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TVE-Wp-ZfO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bookmarks" image="TabBar/TabBar-Bookmarks" selectedImage="TabBar/TabBar-Bookmarks-Active" id="2gE-iW-3s8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="EN9-Jj-DIr">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FJe-uD-awv" kind="relationship" relationship="rootViewController" id="Pf7-VZ-XOp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8z-gG-ozZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3324.8000000000002" y="-468.4729064039409"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Action-Close" width="13" height="13"/>
         <image name="Action-Play-Small" width="23" height="35"/>
         <image name="Art-Book" width="133" height="150"/>
         <image name="Art-iPhoneX" width="129" height="326"/>
+        <image name="Bookmarks-Code" width="44" height="44"/>
         <image name="Home" width="2880" height="1600"/>
         <image name="Logo-Apple" width="36" height="44"/>
         <image name="Logo-DesignCode" width="28" height="28"/>

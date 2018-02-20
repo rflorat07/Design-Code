@@ -16,12 +16,14 @@ class SectionViewController: UIViewController {
     @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var coverView: UIView!
+    @IBOutlet weak var subheadVisualEffectView: UIVisualEffectView!
+    @IBOutlet weak var closeVisualEffectView: UIVisualEffectView!
     
     var section: [String: String]!
     var sections: [[String: String]]!
     var indexPath: IndexPath!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

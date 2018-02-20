@@ -946,7 +946,7 @@ design and code an iOS 11 app.</string>
         <!--More-->
         <scene sceneID="K1W-0x-xzf">
             <objects>
-                <viewController id="R94-RR-FIx" sceneMemberID="viewController">
+                <viewController id="R94-RR-FIx" customClass="MoreViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ksh-0w-7Nb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1024,6 +1024,9 @@ design and code an iOS 11 app.</string>
                                                                 <state key="normal" title="Read on Safari" image="More/safari">
                                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="safariButtonTapped:" destination="R94-RR-FIx" eventType="touchUpInside" id="Fn8-Pk-yZe"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8w-uD-LGS">
                                                                 <rect key="frame" x="0.0" y="180.66666666666669" width="335" height="59"/>
@@ -1034,6 +1037,9 @@ design and code an iOS 11 app.</string>
                                                                 <state key="normal" title="Community" image="More/community">
                                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="communityButtonTapped:" destination="R94-RR-FIx" eventType="touchUpInside" id="c97-6K-Fi9"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTY-54-vwe">
                                                                 <rect key="frame" x="0.0" y="240.66666666666671" width="335" height="59.333333333333343"/>
@@ -1078,6 +1084,9 @@ design and code an iOS 11 app.</string>
                                                         <state key="normal" title="@MengTo" image="More/twitter">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="twitterHandleTapped:" destination="R94-RR-FIx" eventType="touchUpInside" id="iQh-4b-FgV"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
@@ -1136,10 +1145,91 @@ design and code an iOS 11 app.</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="TabBar/TabBar-More" selectedImage="TabBar/TabBar-More-Active" id="5NS-Yb-u4k"/>
                     <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <segue destination="jq2-mz-aNn" kind="presentation" identifier="More to Web" id="EJW-Nd-jY2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFM-Oc-veo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5072.8000000000002" y="-473.64532019704433"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="485-k7-waU">
+            <objects>
+                <viewController id="aFg-UV-Ick" customClass="WebViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2m7-39-dl0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGx-Oo-NQQ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LGx-Oo-NQQ" firstAttribute="top" secondItem="dem-Ge-hRY" secondAttribute="top" id="6LJ-08-nph"/>
+                            <constraint firstItem="dem-Ge-hRY" firstAttribute="bottom" secondItem="LGx-Oo-NQQ" secondAttribute="bottom" id="Id7-7l-2GF"/>
+                            <constraint firstItem="LGx-Oo-NQQ" firstAttribute="leading" secondItem="dem-Ge-hRY" secondAttribute="leading" id="P8a-yx-gJO"/>
+                            <constraint firstItem="dem-Ge-hRY" firstAttribute="trailing" secondItem="LGx-Oo-NQQ" secondAttribute="trailing" id="nbr-kL-ZqU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dem-Ge-hRY"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" image="Web-Back" id="RhG-tX-DCf">
+                            <color key="tintColor" red="0.61960784313725492" green="0.78431372549019607" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="goBack:" destination="aFg-UV-Ick" id="KjN-F1-zrB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9CH-8k-Hjx"/>
+                        <barButtonItem title="Item" image="Web-Forward" id="xTt-9w-npI">
+                            <color key="tintColor" red="0.61960784313725492" green="0.78431372549019607" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="goForward:" destination="aFg-UV-Ick" id="jKo-xS-shN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="fLH-xu-XlS"/>
+                        <barButtonItem title="Item" image="Web-Action" id="5Uf-5E-ITM">
+                            <color key="tintColor" red="0.61960784313725492" green="0.78431372549019607" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="acttionButtonTapped:" destination="aFg-UV-Ick" id="YgE-h8-hXd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="g2Q-dk-SmE"/>
+                        <barButtonItem title="Item" image="Web-Safari" id="Hzs-Dw-JUZ">
+                            <color key="tintColor" red="0.61960784313725492" green="0.78431372549019607" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="safariButtonTapped:" destination="aFg-UV-Ick" id="3tt-7p-slr"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="5hl-AU-or8">
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="qCt-DD-fKp">
+                            <color key="tintColor" red="0.61960784313725492" green="0.78431372549019607" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="aFg-UV-Ick" id="pys-KO-Uqo"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Web-Refresh" id="s7W-pC-d69">
+                            <color key="tintColor" red="0.61960784313725492" green="0.78431372549019607" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="reload:" destination="aFg-UV-Ick" id="Lgz-RQ-rW4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <connections>
+                        <outlet property="webView" destination="LGx-Oo-NQQ" id="hFq-Vp-ewa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vj-i6-4lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6670" y="-474"/>
         </scene>
         <!--Testimonial View Controller-->
         <scene sceneID="nRu-zw-cPR">
@@ -1427,6 +1517,30 @@ design and code an iOS 11 app.</string>
             </objects>
             <point key="canvasLocation" x="3324.8000000000002" y="-468.4729064039409"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FQX-Vh-Prs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="jq2-mz-aNn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Vsn-Dc-9fl">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="dZ1-S6-T3R">
+                        <rect key="frame" x="0.0" y="729" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="aFg-UV-Ick" kind="relationship" relationship="rootViewController" id="0BF-4d-brZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xho-5p-Mm7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5873" y="-474"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Action-Close" width="13" height="13"/>
@@ -1461,6 +1575,11 @@ design and code an iOS 11 app.</string>
         <image name="TabBar/TabBar-More" width="30" height="8"/>
         <image name="TabBar/TabBar-More-Active" width="30" height="8"/>
         <image name="TabBar/Tabbar-Chapters" width="28" height="24"/>
+        <image name="Web-Action" width="32" height="32"/>
+        <image name="Web-Back" width="32" height="32"/>
+        <image name="Web-Forward" width="32" height="32"/>
+        <image name="Web-Refresh" width="32" height="32"/>
+        <image name="Web-Safari" width="32" height="32"/>
         <image name="ios11" width="2880" height="1600"/>
     </resources>
 </document>

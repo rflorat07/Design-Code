@@ -36,11 +36,4 @@ class SectionViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
-    
-    @IBAction func closeButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
 }

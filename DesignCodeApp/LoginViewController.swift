@@ -1,15 +1,15 @@
 //
-//  PurchaseViewController.swift
+//  LoginViewController.swift
 //  DesignCodeApp
 //
-//  Created by Roger Florat on 20/02/18.
+//  Created by Roger Florat on 21/02/18.
 //  Copyright © 2018 Roger Florat. All rights reserved.
 //
 
-
 import UIKit
 
-class PurchaseViewController: UIViewController {
+class LoginViewController: UIViewController {
+    
     
     @IBOutlet var panToClose: InteractionPanToClose!
     
@@ -17,7 +17,6 @@ class PurchaseViewController: UIViewController {
         super.viewDidLoad()
         
         panToClose.setGestureRecognizer()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,4 +24,6 @@ class PurchaseViewController: UIViewController {
         
         panToClose.animateDialogAppear()
     }
+
+    
 }

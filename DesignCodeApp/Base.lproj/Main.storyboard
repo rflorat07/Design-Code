@@ -452,17 +452,13 @@ design and code an iOS 11 app.</string>
                     <navigationItem key="navigationItem" id="k7J-ql-myl">
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="Logo-DesignCode" id="WmK-dQ-gio"/>
-                        <view key="titleView" contentMode="scaleToFill" id="pPg-nK-zwH">
-                            <rect key="frame" x="127.66666666666669" y="8" width="120" height="28"/>
+                        <view key="titleView" clipsSubviews="YES" contentMode="scaleToFill" id="pPg-nK-zwH" customClass="DesignableView" customModule="Spring">
+                            <rect key="frame" x="122.66666666666669" y="8" width="130" height="28"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLf-Bo-ytw">
-                                    <rect key="frame" x="0.0" y="0.0" width="120" height="28"/>
-                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="28" id="ObR-SZ-ZJR"/>
-                                        <constraint firstAttribute="width" constant="120" id="TO2-Oz-jQK"/>
-                                    </constraints>
+                                    <rect key="frame" x="10" y="0.0" width="110" height="28"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                     <state key="normal" title="Buy the Book">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -472,12 +468,23 @@ design and code an iOS 11 app.</string>
                                             <integer key="value" value="14"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <segue destination="hcA-qU-OpM" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="fBn-ym-3Yv"/>
+                                    </connections>
                                 </button>
                             </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstItem="QLf-Bo-ytw" firstAttribute="centerY" secondItem="pPg-nK-zwH" secondAttribute="centerY" id="63G-Ol-Q9U"/>
-                                <constraint firstItem="QLf-Bo-ytw" firstAttribute="centerX" secondItem="pPg-nK-zwH" secondAttribute="centerX" id="xxX-lv-b2n"/>
+                                <constraint firstItem="QLf-Bo-ytw" firstAttribute="leading" secondItem="pPg-nK-zwH" secondAttribute="leading" constant="10" id="Cv1-HY-pvm"/>
+                                <constraint firstAttribute="bottom" secondItem="QLf-Bo-ytw" secondAttribute="bottom" id="cCV-Wf-Yss"/>
+                                <constraint firstItem="QLf-Bo-ytw" firstAttribute="top" secondItem="pPg-nK-zwH" secondAttribute="top" id="g1C-Mh-16x"/>
+                                <constraint firstAttribute="trailing" secondItem="QLf-Bo-ytw" secondAttribute="trailing" constant="10" id="hEf-6J-zwg"/>
                             </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="14"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </view>
                         <barButtonItem key="rightBarButtonItem" title="Login" id="3tr-pU-Nhc">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -939,9 +946,9 @@ design and code an iOS 11 app.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqG-mi-Hk3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ghb-7j-AJq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="extraLight"/>
@@ -1471,7 +1478,7 @@ design and code an iOS 11 app.</string>
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="G9h-jC-zWz" firstAttribute="bottom" secondItem="BqG-mi-Hk3" secondAttribute="bottom" id="EsR-iW-nyd"/>
+                            <constraint firstAttribute="bottom" secondItem="BqG-mi-Hk3" secondAttribute="bottom" id="EsR-iW-nyd"/>
                             <constraint firstItem="G9h-jC-zWz" firstAttribute="trailing" secondItem="fv0-ch-lEX" secondAttribute="trailing" id="KB2-86-a1T"/>
                             <constraint firstItem="fv0-ch-lEX" firstAttribute="leading" secondItem="G9h-jC-zWz" secondAttribute="leading" id="Obn-sQ-Yae"/>
                             <constraint firstItem="fv0-ch-lEX" firstAttribute="top" secondItem="O8Q-ht-FDj" secondAttribute="top" constant="20" id="Qlo-It-fc9"/>
@@ -1496,7 +1503,7 @@ design and code an iOS 11 app.</string>
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="5155.46875" y="377.9296875"/>
+            <point key="canvasLocation" x="1886" y="1237"/>
         </scene>
         <!--Discount-->
         <scene sceneID="QAt-HX-Bzp">
@@ -1807,7 +1814,218 @@ design and code an iOS 11 app.</string>
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="5964" y="375.36945812807886"/>
+            <point key="canvasLocation" x="2682" y="1236"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="YkX-Hh-slh">
+            <objects>
+                <viewController id="uaA-f1-t8o" userLabel="Login" customClass="LoginViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rz3-ug-WbC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pI-nt-Ohy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wq5-HR-lOy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EvM-8f-yag" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vOM-ef-nsn" userLabel="Dialog View" customClass="DesignableView" customModule="Spring">
+                                        <rect key="frame" x="20" y="235.66666666666663" width="335" height="340"/>
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-Uh-HAS" userLabel="Inner View" customClass="DesignableView" customModule="Spring">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="340"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="More/logo-medium" translatesAutoresizingMaskIntoConstraints="NO" id="LY2-iO-XLG">
+                                                        <rect key="frame" x="147" y="30.000000000000028" width="40" height="40"/>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Dq-44-6b2">
+                                                        <rect key="frame" x="0.0" y="100.00000000000003" width="335" height="120"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FO-AU-mG4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="More/email" translatesAutoresizingMaskIntoConstraints="NO" id="sAh-A6-fGl">
+                                                                        <rect key="frame" x="19" y="12" width="36" height="36"/>
+                                                                    </imageView>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gwn-P0-x1c">
+                                                                        <rect key="frame" x="63" y="0.0" width="262" height="60"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="0d7-pq-4TE"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Gwn-P0-x1c" secondAttribute="bottom" id="1AF-N3-ArL"/>
+                                                                    <constraint firstItem="Gwn-P0-x1c" firstAttribute="top" secondItem="6FO-AU-mG4" secondAttribute="top" id="1dr-mc-Z7d"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Gwn-P0-x1c" secondAttribute="trailing" constant="10" id="EOX-Tc-YDY"/>
+                                                                    <constraint firstItem="sAh-A6-fGl" firstAttribute="leading" secondItem="6FO-AU-mG4" secondAttribute="leading" constant="19" id="F5C-O6-n9X"/>
+                                                                    <constraint firstItem="Gwn-P0-x1c" firstAttribute="leading" secondItem="sAh-A6-fGl" secondAttribute="trailing" constant="8" id="bHZ-kZ-qmu"/>
+                                                                    <constraint firstItem="sAh-A6-fGl" firstAttribute="centerY" secondItem="6FO-AU-mG4" secondAttribute="centerY" id="kis-aI-qyJ"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Xp-KI-Dr6">
+                                                                <rect key="frame" x="0.0" y="60" width="335" height="60"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="More/password" translatesAutoresizingMaskIntoConstraints="NO" id="stI-VN-F20">
+                                                                        <rect key="frame" x="19" y="12" width="36" height="36"/>
+                                                                    </imageView>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GEp-5t-u1d">
+                                                                        <rect key="frame" x="63" y="0.0" width="262" height="60"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES" textContentType="password"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="GEp-5t-u1d" firstAttribute="top" secondItem="7Xp-KI-Dr6" secondAttribute="top" id="7r5-nP-MNB"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="GEp-5t-u1d" secondAttribute="trailing" constant="10" id="Iqb-1i-mEw"/>
+                                                                    <constraint firstItem="GEp-5t-u1d" firstAttribute="leading" secondItem="stI-VN-F20" secondAttribute="trailing" constant="8" id="LGt-gG-MD6"/>
+                                                                    <constraint firstItem="stI-VN-F20" firstAttribute="centerY" secondItem="7Xp-KI-Dr6" secondAttribute="centerY" id="cJM-Ju-U1a"/>
+                                                                    <constraint firstAttribute="height" constant="60" id="e7h-vf-cci"/>
+                                                                    <constraint firstItem="stI-VN-F20" firstAttribute="leading" secondItem="7Xp-KI-Dr6" secondAttribute="leading" constant="19" id="gvw-W7-06p"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="GEp-5t-u1d" secondAttribute="bottom" id="u9B-Gp-Gr8"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xS0-jl-y1a">
+                                                        <rect key="frame" x="63" y="228.00000000000003" width="175" height="32.999999999999972"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <state key="normal" title="Forgot your password?">
+                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKt-xi-OU2" customClass="DesignableButton" customModule="Spring">
+                                                        <rect key="frame" x="20" y="260" width="295" height="60"/>
+                                                        <color key="backgroundColor" red="0.24313725490196078" green="0.43137254901960786" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Oz4-JJ-pYv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                        <state key="normal" title="Login">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                <real key="value" value="0.25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="LY2-iO-XLG" firstAttribute="centerX" secondItem="p0s-Uh-HAS" secondAttribute="centerX" id="B9V-aN-oHY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eKt-xi-OU2" secondAttribute="trailing" constant="20" id="CHK-A8-6GG"/>
+                                                    <constraint firstItem="LY2-iO-XLG" firstAttribute="top" secondItem="p0s-Uh-HAS" secondAttribute="top" constant="30" id="ED8-FD-ENG"/>
+                                                    <constraint firstItem="6Dq-44-6b2" firstAttribute="leading" secondItem="p0s-Uh-HAS" secondAttribute="leading" id="Nrc-5g-ve2"/>
+                                                    <constraint firstItem="eKt-xi-OU2" firstAttribute="leading" secondItem="p0s-Uh-HAS" secondAttribute="leading" constant="20" id="SFf-iZ-BJq"/>
+                                                    <constraint firstItem="xS0-jl-y1a" firstAttribute="leading" secondItem="GEp-5t-u1d" secondAttribute="leading" id="Xmy-b1-h9U"/>
+                                                    <constraint firstItem="6Dq-44-6b2" firstAttribute="top" secondItem="LY2-iO-XLG" secondAttribute="bottom" constant="30" id="Y1c-u7-gzB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="eKt-xi-OU2" secondAttribute="bottom" constant="20" id="iHc-GD-0YC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6Dq-44-6b2" secondAttribute="trailing" id="ryk-Vf-zq3"/>
+                                                    <constraint firstItem="xS0-jl-y1a" firstAttribute="top" secondItem="6Dq-44-6b2" secondAttribute="bottom" constant="8" id="vnh-lc-L6a"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="p0s-Uh-HAS" firstAttribute="top" secondItem="vOM-ef-nsn" secondAttribute="top" id="D74-sQ-z08"/>
+                                            <constraint firstAttribute="width" constant="400" id="KUe-8U-TRx"/>
+                                            <constraint firstAttribute="height" constant="340" id="aJF-WK-tE8"/>
+                                            <constraint firstAttribute="bottom" secondItem="p0s-Uh-HAS" secondAttribute="bottom" id="iFH-fQ-KdQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="p0s-Uh-HAS" secondAttribute="trailing" id="iPR-qw-cvX"/>
+                                            <constraint firstItem="p0s-Uh-HAS" firstAttribute="leading" secondItem="vOM-ef-nsn" secondAttribute="leading" id="lxE-Ug-2J2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="KUe-8U-TRx"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="KUe-8U-TRx"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <exclude reference="KUe-8U-TRx"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vOM-ef-nsn" secondAttribute="trailing" constant="20" id="4Rr-eL-VzO"/>
+                                    <constraint firstItem="vOM-ef-nsn" firstAttribute="centerX" secondItem="EvM-8f-yag" secondAttribute="centerX" id="4ek-df-TUu"/>
+                                    <constraint firstAttribute="bottom" secondItem="vOM-ef-nsn" secondAttribute="bottom" constant="20" id="Hm2-lj-m0k"/>
+                                    <constraint firstItem="vOM-ef-nsn" firstAttribute="centerY" secondItem="EvM-8f-yag" secondAttribute="centerY" id="dK6-p0-qan"/>
+                                    <constraint firstItem="vOM-ef-nsn" firstAttribute="leading" secondItem="EvM-8f-yag" secondAttribute="leading" constant="20" id="qL8-ig-VEf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="EvM-8f-yag" firstAttribute="trailing" secondItem="RMR-zN-OB0" secondAttribute="trailing" id="3Yy-S4-eKt"/>
+                            <constraint firstItem="2pI-nt-Ohy" firstAttribute="trailing" secondItem="RMR-zN-OB0" secondAttribute="trailing" id="4op-dB-lJN"/>
+                            <constraint firstItem="2pI-nt-Ohy" firstAttribute="leading" secondItem="RMR-zN-OB0" secondAttribute="leading" id="5vW-HT-Gg5"/>
+                            <constraint firstItem="2pI-nt-Ohy" firstAttribute="bottom" secondItem="RMR-zN-OB0" secondAttribute="bottom" id="Eez-Lc-0h2"/>
+                            <constraint firstItem="EvM-8f-yag" firstAttribute="top" secondItem="Rz3-ug-WbC" secondAttribute="top" id="dEp-vs-DUK"/>
+                            <constraint firstItem="EvM-8f-yag" firstAttribute="bottom" secondItem="Rz3-ug-WbC" secondAttribute="bottom" id="hKY-aT-Tp9"/>
+                            <constraint firstItem="2pI-nt-Ohy" firstAttribute="top" secondItem="Rz3-ug-WbC" secondAttribute="top" id="sCu-d9-dn7"/>
+                            <constraint firstItem="EvM-8f-yag" firstAttribute="leading" secondItem="RMR-zN-OB0" secondAttribute="leading" id="vKF-Oh-b4E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RMR-zN-OB0"/>
+                    </view>
+                    <connections>
+                        <outlet property="panToClose" destination="LYT-Py-hH6" id="Avw-lb-SyK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1T-MP-80a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="LYT-Py-hH6" customClass="InteractionPanToClose" customModule="DesignCodeApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="dialogView" destination="vOM-ef-nsn" id="vdB-KH-DXH"/>
+                        <outlet property="scrollView" destination="EvM-8f-yag" id="an5-Uh-Hoq"/>
+                        <outlet property="viewController" destination="uaA-f1-t8o" id="1nn-wZ-1UE"/>
+                        <outlet property="visualEffectView" destination="2pI-nt-Ohy" id="bMo-tc-tvJ"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="6732" y="377.36131934032989"/>
         </scene>
         <!--Exercises-->
         <scene sceneID="Dpc-od-n8B">
@@ -1879,7 +2097,7 @@ design and code an iOS 11 app.</string>
                                                                         <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="70"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder/image-ring-3" translatesAutoresizingMaskIntoConstraints="NO" id="mv5-2Z-bqo">
-                                                                                <rect key="frame" x="15" y="-0.3333333333333286" width="70" height="70"/>
+                                                                                <rect key="frame" x="14" y="-0.3333333333333286" width="70" height="70"/>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jk-ws-HYl">
                                                                                 <rect key="frame" x="22" y="23.666666666666657" width="55" height="24"/>
@@ -1943,10 +2161,10 @@ design and code an iOS 11 app.</string>
                                                                         <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="70"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder/image-ring-1" translatesAutoresizingMaskIntoConstraints="NO" id="zZa-93-oGJ">
-                                                                                <rect key="frame" x="14" y="-0.3333333333333286" width="70" height="70"/>
+                                                                                <rect key="frame" x="14.333333333333343" y="-0.3333333333333286" width="70" height="70"/>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJo-Go-FNT">
-                                                                                <rect key="frame" x="22.000000000000028" y="23.666666666666657" width="55" height="24"/>
+                                                                                <rect key="frame" x="22.333333333333343" y="23.666666666666657" width="55" height="24"/>
                                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -1986,7 +2204,7 @@ design and code an iOS 11 app.</string>
                                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
                                                                         <connections>
-                                                                            <segue destination="hcA-qU-OpM" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="z5b-BM-NH3"/>
+                                                                            <segue destination="uaA-f1-t8o" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="Adb-lb-pGS"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACg-bs-nuj">
@@ -2602,6 +2820,8 @@ design and code an iOS 11 app.</string>
         <image name="More/email" width="36" height="36"/>
         <image name="More/info" width="36" height="36"/>
         <image name="More/logo" width="36" height="36"/>
+        <image name="More/logo-medium" width="40" height="40"/>
+        <image name="More/password" width="36" height="36"/>
         <image name="More/safari" width="36" height="36"/>
         <image name="More/twitter" width="24" height="20"/>
         <image name="Placeholder/image-ring-1" width="70" height="70"/>
@@ -2628,6 +2848,6 @@ design and code an iOS 11 app.</string>
         <image name="ios11" width="2880" height="1600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7zI-z8-FQ5"/>
+        <segue reference="fhk-rx-D3d"/>
     </inferredMetricsTieBreakers>
 </document>

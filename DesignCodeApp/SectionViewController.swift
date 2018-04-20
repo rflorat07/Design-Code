@@ -21,17 +21,17 @@ class SectionViewController: UIViewController {
     @IBOutlet weak var subheadVisualEffectView: UIVisualEffectView!
     @IBOutlet weak var closeVisualEffectView: UIVisualEffectView!
     
-    var section: [String: String]!
-    var sections: [[String: String]]!
+    var section: Section!
+    var sections: Array<Section>!
     var indexPath: IndexPath!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = section["title"]
-        captionLabel.text = section["caption"]
-        bodyLabel.text = section["body"]
-        coverImageView.image = UIImage(named: section["image"]!)
+        titleLabel.text = section.title
+        captionLabel.text = section.caption
+        bodyLabel.text = section.body
+        coverImageView.image = UIImage(named: section.imageName!)
         progressLabel.text = "\(indexPath.row + 1) / \(sections.count)"
     }
     

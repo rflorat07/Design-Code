@@ -14,14 +14,24 @@
 		4F2798452036F490007D29DF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2798442036F490007D29DF /* Data.swift */; };
 		4F2798472036F564007D29DF /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2798462036F564007D29DF /* SectionCollectionViewCell.swift */; };
 		4F3D705A203D93B8003C8488 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D7059203D93B8003C8488 /* LoginViewController.swift */; };
+		4F3D705C203DBF15003C8488 /* UILabel+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D705B203DBF15003C8488 /* UILabel+Animate.swift */; };
 		4F4D51B120348F890089933E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D51B020348F890089933E /* AppDelegate.swift */; };
 		4F4D51B320348F890089933E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D51B220348F890089933E /* HomeViewController.swift */; };
 		4F4D51B620348F890089933E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D51B420348F890089933E /* Main.storyboard */; };
 		4F4D51B920348F890089933E /* DesignCodeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D51B720348F890089933E /* DesignCodeApp.xcdatamodeld */; };
 		4F4D51BB20348F890089933E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D51BA20348F890089933E /* Assets.xcassets */; };
 		4F4D51BE20348F890089933E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D51BC20348F890089933E /* LaunchScreen.storyboard */; };
+		4F6AD5F02046F706006088FD /* QuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6AD5EF2046F706006088FD /* QuestionCollectionViewCell.swift */; };
+		4F6AD5F22046FDB1006088FD /* ScoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6AD5F12046FDB1006088FD /* ScoreCollectionViewCell.swift */; };
 		4F6D5804203C6D13008B7DF9 /* InteractionPanToClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D5803203C6D13008B7DF9 /* InteractionPanToClose.swift */; };
 		4F6D5806203C7D49008B7DF9 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D5805203C7D49008B7DF9 /* PurchaseViewController.swift */; };
+		4F6EF1E82089CD5D0059F7D0 /* Parts.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F6EF1E72089CD5D0059F7D0 /* Parts.json */; };
+		4F6EF1EB2089D7760059F7D0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F6EF1E92089D7760059F7D0 /* Model.xcdatamodeld */; };
+		4F6EF1ED2089DAF80059F7D0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6EF1EC2089DAF80059F7D0 /* CoreDataManager.swift */; };
+		4F6EF1EF2089FB850059F7D0 /* ContentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6EF1EE2089FB850059F7D0 /* ContentAPI.swift */; };
+		4F7BFFA4203ECF9200C5537F /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7BFFA3203ECF9100C5537F /* ExerciseTableViewCell.swift */; };
+		4F7BFFA6203ED46800C5537F /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7BFFA5203ED46800C5537F /* ExercisesTableViewController.swift */; };
+		4F7BFFA8203EDBFD00C5537F /* ExerciseDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7BFFA7203EDBFD00C5537F /* ExerciseDialogViewController.swift */; };
 		4F8C8EDC203B0C1B00C9F4B8 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C8EDB203B0C1B00C9F4B8 /* ChaptersViewController.swift */; };
 		4F8C8EDE203B142B00C9F4B8 /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C8EDD203B142B00C9F4B8 /* BookmarksTableViewController.swift */; };
 		4F8C8EE0203B1BFC00C9F4B8 /* BookmarksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C8EDF203B1BFC00C9F4B8 /* BookmarksTableViewCell.swift */; };
@@ -29,6 +39,8 @@
 		4F8C8EE4203B33BF00C9F4B8 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C8EE3203B33BF00C9F4B8 /* MoreViewController.swift */; };
 		4FB2FA4C203D794300061BE1 /* DiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2FA4B203D794300061BE1 /* DiscountViewController.swift */; };
 		4FB2FA4E203D7A4800061BE1 /* UILabel+Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2FA4D203D7A4800061BE1 /* UILabel+Inspectable.swift */; };
+		4FBFA6B420888F3D00F91025 /* Sections.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FBFA6B320888F3D00F91025 /* Sections.json */; };
+		4FBFA6B82088BD3E00F91025 /* Bookmarks.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FBFA6B72088BD3E00F91025 /* Bookmarks.json */; };
 		D7E4E23BDE8597838960B203 /* Pods_DesignCodeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF770B71D04C7104DECEC2CC /* Pods_DesignCodeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +53,7 @@
 		4F2798442036F490007D29DF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4F2798462036F564007D29DF /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		4F3D7059203D93B8003C8488 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4F3D705B203DBF15003C8488 /* UILabel+Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Animate.swift"; sourceTree = "<group>"; };
 		4F4D51AD20348F890089933E /* DesignCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4D51B020348F890089933E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F4D51B220348F890089933E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +62,17 @@
 		4F4D51BA20348F890089933E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F4D51BD20348F890089933E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F4D51BF20348F890089933E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F6AD5EF2046F706006088FD /* QuestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCollectionViewCell.swift; sourceTree = "<group>"; };
+		4F6AD5F12046FDB1006088FD /* ScoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCollectionViewCell.swift; sourceTree = "<group>"; };
 		4F6D5803203C6D13008B7DF9 /* InteractionPanToClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionPanToClose.swift; sourceTree = "<group>"; };
 		4F6D5805203C7D49008B7DF9 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		4F6EF1E72089CD5D0059F7D0 /* Parts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Parts.json; sourceTree = "<group>"; };
+		4F6EF1EA2089D7760059F7D0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4F6EF1EC2089DAF80059F7D0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4F6EF1EE2089FB850059F7D0 /* ContentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAPI.swift; sourceTree = "<group>"; };
+		4F7BFFA3203ECF9100C5537F /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		4F7BFFA5203ED46800C5537F /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
+		4F7BFFA7203EDBFD00C5537F /* ExerciseDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDialogViewController.swift; sourceTree = "<group>"; };
 		4F8C8EDB203B0C1B00C9F4B8 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
 		4F8C8EDD203B142B00C9F4B8 /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
 		4F8C8EDF203B1BFC00C9F4B8 /* BookmarksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewCell.swift; sourceTree = "<group>"; };
@@ -58,6 +80,8 @@
 		4F8C8EE3203B33BF00C9F4B8 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		4FB2FA4B203D794300061BE1 /* DiscountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountViewController.swift; sourceTree = "<group>"; };
 		4FB2FA4D203D7A4800061BE1 /* UILabel+Inspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Inspectable.swift"; sourceTree = "<group>"; };
+		4FBFA6B320888F3D00F91025 /* Sections.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sections.json; sourceTree = "<group>"; };
+		4FBFA6B72088BD3E00F91025 /* Bookmarks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Bookmarks.json; sourceTree = "<group>"; };
 		FF57C0E2E5F2C1FFEDFF75F5 /* Pods-DesignCodeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignCodeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesignCodeApp/Pods-DesignCodeApp.release.xcconfig"; sourceTree = "<group>"; };
 		FF770B71D04C7104DECEC2CC /* Pods_DesignCodeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignCodeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,20 +137,32 @@
 				4F0D2FAE2037231A0014B52B /* TestimonialCollectionViewCell.swift */,
 				4F8C8EDD203B142B00C9F4B8 /* BookmarksTableViewController.swift */,
 				4F8C8EDF203B1BFC00C9F4B8 /* BookmarksTableViewCell.swift */,
+				4F6AD5EF2046F706006088FD /* QuestionCollectionViewCell.swift */,
+				4F6AD5F12046FDB1006088FD /* ScoreCollectionViewCell.swift */,
 				4F8C8EE3203B33BF00C9F4B8 /* MoreViewController.swift */,
 				4F8C8EE1203B2F6100C9F4B8 /* WebViewController.swift */,
 				4F145715203C2EE80045ABDD /* PresentSectionViewController.swift */,
 				4F6D5805203C7D49008B7DF9 /* PurchaseViewController.swift */,
 				4FB2FA4B203D794300061BE1 /* DiscountViewController.swift */,
 				4F3D7059203D93B8003C8488 /* LoginViewController.swift */,
+				4F7BFFA5203ED46800C5537F /* ExercisesTableViewController.swift */,
+				4F7BFFA3203ECF9100C5537F /* ExerciseTableViewCell.swift */,
+				4F7BFFA7203EDBFD00C5537F /* ExerciseDialogViewController.swift */,
+				4F3D705B203DBF15003C8488 /* UILabel+Animate.swift */,
 				4FB2FA4D203D7A4800061BE1 /* UILabel+Inspectable.swift */,
 				4F6D5803203C6D13008B7DF9 /* InteractionPanToClose.swift */,
 				4F2798442036F490007D29DF /* Data.swift */,
+				4F6EF1E72089CD5D0059F7D0 /* Parts.json */,
+				4FBFA6B320888F3D00F91025 /* Sections.json */,
+				4FBFA6B72088BD3E00F91025 /* Bookmarks.json */,
 				4F4D51BA20348F890089933E /* Assets.xcassets */,
 				4F4D51BF20348F890089933E /* Info.plist */,
 				4F4D51B420348F890089933E /* Main.storyboard */,
 				4F4D51BC20348F890089933E /* LaunchScreen.storyboard */,
+				4F6EF1E92089D7760059F7D0 /* Model.xcdatamodeld */,
 				4F4D51B720348F890089933E /* DesignCodeApp.xcdatamodeld */,
+				4F6EF1EC2089DAF80059F7D0 /* CoreDataManager.swift */,
+				4F6EF1EE2089FB850059F7D0 /* ContentAPI.swift */,
 			);
 			path = DesignCodeApp;
 			sourceTree = "<group>";
@@ -201,7 +237,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FBFA6B82088BD3E00F91025 /* Bookmarks.json in Resources */,
 				4F4D51BE20348F890089933E /* LaunchScreen.storyboard in Resources */,
+				4F6EF1E82089CD5D0059F7D0 /* Parts.json in Resources */,
+				4FBFA6B420888F3D00F91025 /* Sections.json in Resources */,
 				4F4D51BB20348F890089933E /* Assets.xcassets in Resources */,
 				4F4D51B620348F890089933E /* Main.storyboard in Resources */,
 			);
@@ -232,11 +271,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DesignCodeApp/Pods-DesignCodeApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MKRingProgressView/MKRingProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
 				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKRingProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 			);
@@ -273,21 +314,30 @@
 				4F4D51B320348F890089933E /* HomeViewController.swift in Sources */,
 				4F6D5806203C7D49008B7DF9 /* PurchaseViewController.swift in Sources */,
 				4F8C8EE4203B33BF00C9F4B8 /* MoreViewController.swift in Sources */,
+				4F7BFFA4203ECF9200C5537F /* ExerciseTableViewCell.swift in Sources */,
+				4F6EF1EF2089FB850059F7D0 /* ContentAPI.swift in Sources */,
+				4F6AD5F02046F706006088FD /* QuestionCollectionViewCell.swift in Sources */,
+				4F6EF1EB2089D7760059F7D0 /* Model.xcdatamodeld in Sources */,
+				4F6AD5F22046FDB1006088FD /* ScoreCollectionViewCell.swift in Sources */,
 				4F8C8EDE203B142B00C9F4B8 /* BookmarksTableViewController.swift in Sources */,
 				4F3D705A203D93B8003C8488 /* LoginViewController.swift in Sources */,
 				4F2798452036F490007D29DF /* Data.swift in Sources */,
 				4F4D51B120348F890089933E /* AppDelegate.swift in Sources */,
 				4F2798432036DC33007D29DF /* SectionViewController.swift in Sources */,
+				4F3D705C203DBF15003C8488 /* UILabel+Animate.swift in Sources */,
 				4F8C8EE0203B1BFC00C9F4B8 /* BookmarksTableViewCell.swift in Sources */,
+				4F7BFFA6203ED46800C5537F /* ExercisesTableViewController.swift in Sources */,
 				4F6D5804203C6D13008B7DF9 /* InteractionPanToClose.swift in Sources */,
 				4F0D2FAD203722DE0014B52B /* TestimonialViewController.swift in Sources */,
 				4F145716203C2EE80045ABDD /* PresentSectionViewController.swift in Sources */,
 				4F8C8EE2203B2F6100C9F4B8 /* WebViewController.swift in Sources */,
+				4F7BFFA8203EDBFD00C5537F /* ExerciseDialogViewController.swift in Sources */,
 				4FB2FA4C203D794300061BE1 /* DiscountViewController.swift in Sources */,
 				4F2798472036F564007D29DF /* SectionCollectionViewCell.swift in Sources */,
 				4F0D2FAF2037231A0014B52B /* TestimonialCollectionViewCell.swift in Sources */,
 				4FB2FA4E203D7A4800061BE1 /* UILabel+Inspectable.swift in Sources */,
 				4F4D51B920348F890089933E /* DesignCodeApp.xcdatamodeld in Sources */,
+				4F6EF1ED2089DAF80059F7D0 /* CoreDataManager.swift in Sources */,
 				4F8C8EDC203B0C1B00C9F4B8 /* ChaptersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JN5ZWL7XP;
 				INFOPLIST_FILE = DesignCodeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rogerflorat.DesignCodeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JN5ZWL7XP;
 				INFOPLIST_FILE = DesignCodeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rogerflorat.DesignCodeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +536,16 @@
 			);
 			currentVersion = 4F4D51B820348F890089933E /* DesignCodeApp.xcdatamodel */;
 			path = DesignCodeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		4F6EF1E92089D7760059F7D0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F6EF1EA2089D7760059F7D0 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4F6EF1EA2089D7760059F7D0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

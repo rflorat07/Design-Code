@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DesignCodeApp/SectionViewController.swift"
+            timestampString = "540902924.4612401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.SectionViewController.__deallocating_deinit"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/SectionViewController.swift"
+                  timestampString = "540811985.088286"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.SectionViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; DesignCodeApp.SectionViewController"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/SectionViewController.swift"
+                  timestampString = "540811985.090187"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.SectionViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; DesignCodeApp.SectionViewController"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/SectionViewController.swift"
+                  timestampString = "540811985.092188"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.SectionViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;DesignCodeApp.SectionViewController&gt;"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/SectionViewController.swift"
+                  timestampString = "540811985.094113"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.SectionViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;DesignCodeApp.SectionViewController&gt;"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/SectionViewController.swift"
+                  timestampString = "540811985.0958951"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DesignCodeApp/InteractionPanToClose.swift"
+            timestampString = "540912419.2514679"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "InteractionPanToClose"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.InteractionPanToClose.dialogView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/InteractionPanToClose.swift"
+                  timestampString = "540900313.916687"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.InteractionPanToClose.dialogView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/InteractionPanToClose.swift"
+                  timestampString = "540900313.9215"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.InteractionPanToClose.init() -&gt; DesignCodeApp.InteractionPanToClose"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/InteractionPanToClose.swift"
+                  timestampString = "540900313.924258"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "432">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

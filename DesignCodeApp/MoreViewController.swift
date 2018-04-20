@@ -7,12 +7,32 @@
 //
 
 import UIKit
+import MKRingProgressView
 
 class MoreViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    @IBOutlet weak var progress1View: MKRingProgressView!
+    @IBOutlet weak var progress2View: MKRingProgressView!
+    @IBOutlet weak var progress3View: MKRingProgressView!
+    
+    @IBOutlet weak var progress1Label: UILabel!
+    @IBOutlet weak var progress2Label: UILabel!
+    @IBOutlet weak var progress3Label: UILabel!
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let progress = [72,56, 22]
+        
+        progress1Label.animateTo(progress[0])
+        progress2Label.animateTo(progress[1])
+        progress3Label.animateTo(progress[2])
+        
+        progress1View.animateTo(progress[0])
+        progress2View.animateTo(progress[1])
+        progress3View.animateTo(progress[2])
+        
     }
 
     @IBAction func safariButtonTapped(_ sender: UIButton) {
@@ -37,3 +57,27 @@ class MoreViewController: UIViewController {
         }
     }
 }
+
+extension MKRingProgressView {
+    
+    func animateTo(_ number : Int) {
+        
+        CATransaction.begin()
+        CATransaction.setAnimationDuration(1.0)
+        
+        self.progress = Double(number) / 100
+        
+        CATransaction.commit()
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+

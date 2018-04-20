@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DesignCodeApp/HomeViewController.swift"
+            timestampString = "540991994.610707"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.HomeViewController.backgroundImageView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/HomeViewController.swift"
+                  timestampString = "541520905.450971"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.HomeViewController.backgroundImageView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/HomeViewController.swift"
+                  timestampString = "541520905.453141"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.HomeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; DesignCodeApp.HomeViewController"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/HomeViewController.swift"
+                  timestampString = "541520905.455193"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignCodeApp.HomeViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;DesignCodeApp.HomeViewController&gt;"
+                  moduleName = "DesignCodeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rflorat/Courses/DesignCode/DesignCodeApp/DesignCodeApp/HomeViewController.swift"
+                  timestampString = "541520905.457418"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "395">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -10,7 +10,9 @@ import UIKit
 
 class BookmarksTableViewController: UITableViewController {
     
-    var bookmarks : Array<Dictionary<String, String>> = allBookmarks
+   var bookmarks : Array<Bookmark> { return CoreDataManager.shared.bookmarks }
+    
+   var sections : Array<Section> { return CoreDataManager.shared.sections }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -28,14 +30,32 @@ class BookmarksTableViewController: UITableViewController {
         
         let bookmark = bookmarks[indexPath.row]
         
-        cell.chapterTitleLabel.text = bookmark["section"]?.uppercased()
-        cell.titleLabel.text = bookmark["part"]
-        cell.bodyLabel.text = bookmark["content"]
-        cell.chapterNumberLabel.text = bookmark["chapter"]
-        cell.badgeImageView.image = UIImage(named: "Bookmarks/" + bookmark["type"]!)
+        let part = bookmark.part!
+        let section = bookmark.section!
+        
+        cell.chapterTitleLabel.text = section.title!.uppercased()
+        cell.titleLabel.text = part.title
+        cell.bodyLabel.text = part.content
+        cell.chapterNumberLabel.text = section.chapterNumber
+        cell.badgeImageView.image = UIImage(named: "Bookmarks/" + (part.type ?? "text"))
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            
+            tableView.beginUpdates()
+            
+            let bookmark = bookmarks[indexPath.row]
+            CoreDataManager.shared.remove(bookmark)
+            
+            tableView.deleteRows(at: [indexPath], with: .top)
+            tableView.endUpdates()
+        }
+    }
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "Bookmarks to Section", sender: indexPath)

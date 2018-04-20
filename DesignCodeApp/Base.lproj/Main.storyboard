@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -665,7 +664,7 @@ design and code an iOS 11 app.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0S-gs-5ZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gyW-Gn-flg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1886" y="-116"/>
+            <point key="canvasLocation" x="1886" y="-76"/>
         </scene>
         <!--Chapters-->
         <scene sceneID="AZE-SZ-iyy">
@@ -842,7 +841,7 @@ design and code an iOS 11 app.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookmarkCell" rowHeight="125" id="NBF-Vh-hDI" customClass="BookmarksTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookmarkCell" rowHeight="125" id="NBF-Vh-hDI" customClass="BookmarksTableViewCell" customModule="DesignCodeApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NBF-Vh-hDI" id="7gb-VA-Um7">
@@ -915,7 +914,7 @@ design and code an iOS 11 app.</string>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="70" minY="0.0" maxX="16" maxY="0.0"/>
                                 <connections>
-                                    <outlet property="badgeImageView" destination="Ia8-Ne-1WQ" id="yeC-B8-2Ci"/>
+                                    <outlet property="badgeImageView" destination="Ia8-Ne-1WQ" id="XMD-ce-pax"/>
                                     <outlet property="bodyLabel" destination="O5o-je-XLd" id="Y5D-Dx-AhW"/>
                                     <outlet property="chapterNumberLabel" destination="jcO-Z8-30J" id="xsv-hQ-B9w"/>
                                     <outlet property="chapterTitleLabel" destination="Hfi-j4-sYY" id="y04-eC-1Z5"/>
@@ -928,7 +927,7 @@ design and code an iOS 11 app.</string>
                             <outlet property="delegate" destination="j04-De-2Wy" id="DYQ-41-KXk"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="shV-Zh-AXY"/>
+                    <tabBarItem key="tabBarItem" title="Bookmarks" id="shV-Zh-AXY"/>
                     <navigationItem key="navigationItem" title="Bookmarks" id="Hx4-rN-TDq"/>
                     <connections>
                         <segue destination="nsI-yr-qkg" kind="presentation" identifier="Bookmarks to Section" id="7zI-z8-FQ5"/>
@@ -936,7 +935,7 @@ design and code an iOS 11 app.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bi-Me-dJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3879.1999999999998" y="353.9730134932534"/>
+            <point key="canvasLocation" x="4382" y="330"/>
         </scene>
         <!--Exercise Dialog-->
         <scene sceneID="ldN-fu-xzO">
@@ -1037,7 +1036,7 @@ design and code an iOS 11 app.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49M-Qa-x9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4720.8000000000002" y="353.9730134932534"/>
+            <point key="canvasLocation" x="5156" y="329"/>
         </scene>
         <!--Purchase-->
         <scene sceneID="5Ph-kU-tBk">
@@ -3406,7 +3405,7 @@ design and code an iOS 11 app.</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uu7-hf-2AY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3240" y="353.52323838080963"/>
+            <point key="canvasLocation" x="3540" y="329"/>
         </scene>
     </scenes>
     <resources>
@@ -3465,6 +3464,6 @@ design and code an iOS 11 app.</string>
         <image name="swift-wallpaper" width="5120" height="2880"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fhk-rx-D3d"/>
+        <segue reference="7zI-z8-FQ5"/>
     </inferredMetricsTieBreakers>
 </document>

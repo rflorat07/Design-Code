@@ -18,7 +18,6 @@ struct SectionCodable : Codable {
     
     var id : String
     var chapterNumber : String
-    
     var title : String
     var caption : String
     var body : String
@@ -33,30 +32,6 @@ struct PartCodable : Codable {
     var typeName : String
     var title : String
     var content : String
-    
-    enum PartType: String {
-        case text, image, video, code
-    }
-    
-    var type : PartType?
-    
-    enum CodingKeys : String, CodingKey {
-        case content, id, title
-        case typeName = "type"
-    }
-    
-    
-    init(from decoder: Decoder) throws {
-        
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        
-        id = try values.decode(String.self, forKey: .id)
-        typeName = try values.decode(String.self, forKey: .typeName)
-        title = try values.decode(String.self, forKey: .title)
-        content = try values.decode(String.self, forKey: .content)
-        
-        type = PartType(rawValue: typeName)
-    }
 }
 
 class ContentAPI {
@@ -64,7 +39,7 @@ class ContentAPI {
     static var shared : ContentAPI = ContentAPI()
     
     lazy var bookmarks : Array<BookmarkCodable> = {
-        return load(into: Array<BookmarkCodable>.self, resource: "Bookmark") ?? []
+        return load(into: Array<BookmarkCodable>.self, resource: "Bookmarks") ?? []
     }()
     
     lazy var sections : Array<SectionCodable> = {
@@ -89,5 +64,5 @@ class ContentAPI {
         
         return try! decoder.decode(swiftType.self, from: data)
     }
-    
+        
 }

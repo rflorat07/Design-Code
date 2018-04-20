@@ -8,10 +8,6 @@
 
 import UIKit
 
-class Data: NSObject {
-
-}
-
 let exercises = [
     "chapter-1-iOS-11-Design": [
         [

@@ -15,8 +15,9 @@ class BookmarksTableViewController: UITableViewController {
    var sections : Array<Section> { return CoreDataManager.shared.sections }
     
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
+        super.viewDidAppear(animated)
+                
         tableView.reloadData()
     }
     

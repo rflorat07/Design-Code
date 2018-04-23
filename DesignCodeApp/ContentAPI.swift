@@ -6,52 +6,90 @@
 //  Copyright © 2018 Roger Florat. All rights reserved.
 //
 
-import Foundation
+import RealmSwift
 
-struct BookmarkCodable : Codable {
-    var sectionId : String
-    var partId : String
+class Bookmark : Object, Decodable {
+    
+    @objc dynamic var section : Section?
+    @objc dynamic var sectionId : String = ""
+    
+    @objc dynamic var part : Part?
+    @objc dynamic var partId : String = ""
 }
 
+class Part : Object, Decodable {
+    
+    @objc dynamic var id : String = ""
+    @objc dynamic var title : String = ""
+    @objc dynamic var content : String = ""
+    @objc dynamic var typeName : String = ""
 
-struct SectionCodable : Codable {
+    @objc dynamic var section : Section?
     
-    var id : String
-    var chapterNumber : String
-    var title : String
-    var caption : String
-    var body : String
-    var imageName : String
-    var publishDate : Date
+    override static func primaryKey() -> String? { return "id" }
     
+    enum CodingKeys : String, CodingKey {
+        case content, id, title
+        case typeName = "type"
+    }
 }
 
-struct PartCodable : Codable {
+class Section : Object, Decodable {
     
-    var id : String
-    var typeName : String
-    var title : String
-    var content : String
+    @objc dynamic var id : String = ""
+    @objc dynamic var title : String = ""
+    @objc dynamic var caption : String = ""
+    @objc dynamic var body : String = ""
+    @objc dynamic var imageName : String = ""
+    @objc dynamic var chapterNumber : String = ""
+    
+    @objc dynamic var publishDate : Date?
+    
+    var parts : List<Part>? = List<Part>()
+    
+    private enum CodingKeys : String, CodingKey {
+        case id, title, caption, body, imageName, chapterNumber, publishDate, parts
+
+    }
+    
+    override static func primaryKey() -> String? { return "id" }
+    
+    convenience required init(from decoder: Decoder) throws {
+        
+        self.init()
+        
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        id = try container.decode(String.self, forKey: .id)
+        title = try container.decode(String.self, forKey: .title)
+        caption = try container.decode(String.self, forKey: .caption)
+        body = try container.decode(String.self, forKey: .body)
+        imageName = try container.decode(String.self, forKey: .imageName)
+        chapterNumber = try container.decode(String.self, forKey: .chapterNumber)
+        
+        publishDate = try container.decode(Date.self, forKey: .publishDate)
+        
+        parts = List<Part>()
+    }
 }
 
 class ContentAPI {
     
     static var shared : ContentAPI = ContentAPI()
     
-    lazy var bookmarks : Array<BookmarkCodable> = {
-        return load(into: Array<BookmarkCodable>.self, resource: "Bookmarks") ?? []
+    lazy var bookmarks : Array<Bookmark> = {
+        return load(into: Array<Bookmark>.self, resource: "Bookmarks") ?? []
     }()
     
-    lazy var sections : Array<SectionCodable> = {
-        return load(into: Array<SectionCodable>.self, resource: "Sections") ?? []
+    lazy var parts : Array<Part> = {
+        return load(into: Array<Part>.self, resource: "Parts") ?? []
     }()
     
-    lazy var parts : Array<PartCodable> = {
-        return load(into: Array<PartCodable>.self, resource: "Parts") ?? []
+    lazy var sections : Array<Section> = {
+        return load(into: Array<Section>.self, resource: "Sections") ?? []
     }()
     
-    
-    func load<T : Codable>(into swiftType : T.Type, resource : String, ofType type : String = "json") -> T? {
+    func load<T : Decodable>(into swiftType : T.Type, resource : String, ofType type : String = "json") -> T? {
         
         let path = Bundle.main.path(forResource: resource, ofType: type)
         let url = URL(fileURLWithPath: path!)
@@ -64,5 +102,8 @@ class ContentAPI {
         
         return try! decoder.decode(swiftType.self, from: data)
     }
-        
+    
 }
+
+
+

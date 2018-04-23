@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SectionViewController: UIViewController {
     
@@ -22,7 +23,7 @@ class SectionViewController: UIViewController {
     @IBOutlet weak var closeVisualEffectView: UIVisualEffectView!
     
     var section: Section!
-    var sections: Array<Section>!
+    var sections: Results<Section>!
     var indexPath: IndexPath!
     
     override func viewDidLoad() {
@@ -31,7 +32,7 @@ class SectionViewController: UIViewController {
         titleLabel.text = section.title
         captionLabel.text = section.caption
         bodyLabel.text = section.body
-        coverImageView.image = UIImage(named: section.imageName!)
+        coverImageView.image = UIImage(named: section.imageName)
         progressLabel.text = "\(indexPath.row + 1) / \(sections.count)"
     }
     

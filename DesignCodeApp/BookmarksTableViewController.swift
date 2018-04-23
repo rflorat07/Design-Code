@@ -7,18 +7,27 @@
 //
 
 import UIKit
+import RealmSwift
 
 class BookmarksTableViewController: UITableViewController {
     
-   var bookmarks : Array<Bookmark> { return CoreDataManager.shared.bookmarks }
+    var bookmarks : Results<Bookmark> { return RealmManager.bookmarks }
     
-   var sections : Array<Section> { return CoreDataManager.shared.sections }
+    var sections : Results<Section> { return RealmManager.sections }
     
     override func viewDidAppear(_ animated: Bool) {
         
         super.viewDidAppear(animated)
                 
         tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Bookmarks to Section", let destination = segue.destination as? SectionViewController {
+            destination.section = sections[0]
+            destination.sections = sections
+            destination.indexPath = sender as! IndexPath
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,15 +39,15 @@ class BookmarksTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "bookmarkCell") as! BookmarksTableViewCell
         
         let bookmark = bookmarks[indexPath.row]
-        
-        let part = bookmark.part!
         let section = bookmark.section!
+        let part = bookmark.part!
+
         
-        cell.chapterTitleLabel.text = section.title!.uppercased()
+        cell.chapterTitleLabel.text = section.title.uppercased()
         cell.titleLabel.text = part.title
         cell.bodyLabel.text = part.content
         cell.chapterNumberLabel.text = section.chapterNumber
-        cell.badgeImageView.image = UIImage(named: "Bookmarks/" + (part.type ?? "text"))
+        cell.badgeImageView.image = UIImage(named: "Bookmarks/" + (part.typeName ?? "text"))
         
         return cell
     }
@@ -50,7 +59,7 @@ class BookmarksTableViewController: UITableViewController {
             tableView.beginUpdates()
             
             let bookmark = bookmarks[indexPath.row]
-            CoreDataManager.shared.remove(bookmark)
+            RealmManager.remove(bookmark)
             
             tableView.deleteRows(at: [indexPath], with: .top)
             tableView.endUpdates()
@@ -60,14 +69,6 @@ class BookmarksTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "Bookmarks to Section", sender: indexPath)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Bookmarks to Section", let destination = segue.destination as? SectionViewController {
-            destination.section = sections[0]
-            destination.sections = sections
-            destination.indexPath = sender as! IndexPath
-        }
     }
     
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 import AVKit
+import RealmSwift
 
 class HomeViewController: UIViewController {
     
@@ -24,7 +25,7 @@ class HomeViewController: UIViewController {
     
     let presentSectionViewController = PresentSectionViewController()
     
-    var sections : Array<Section> { return CoreDataManager.shared.sections }
+    var sections : Results<Section> { return RealmManager.sections }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -130,7 +131,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let section = sections[indexPath.row]
         cell.titleLabel.text = section.title
         cell.captionLabel.text = section.caption
-        cell.coverImageView.image = UIImage(named: section.imageName!)
+        cell.coverImageView.image = UIImage(named: section.imageName)
         
         cell.layer.transform = animateCell(cellFrame: cell.frame)
         
